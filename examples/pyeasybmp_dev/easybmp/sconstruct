@@ -1,0 +1,2 @@
+env = Environment()
+SConscript('sconscript', variant_dir='binaries', duplicate=0, exports=["env"])

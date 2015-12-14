@@ -1,0 +1,7 @@
+Import('*')
+
+target_name = 'templates'
+shlib = env.SharedLibrary( target=target_name
+                           , source=[ target_name + '.cpp' ]
+                           , CPPPATH=['#data'] )
+env.Alias( target_name, shlib )

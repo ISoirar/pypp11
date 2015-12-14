@@ -1,0 +1,44 @@
+import os
+import sys
+
+vars = Variables()
+
+vars.Add( BoolVariable( 'use_msvc71', 'use msvc71 compiler', False ) )
+
+env = Environment(variables=vars)
+
+if 'win32' in sys.platform:
+    if os.path.exists( r'E:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib' ):
+        env.Append( LIBPATH=[ r'E:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib'
+                             , r'E:\Program Files\Microsoft Visual Studio 9.0\VC\lib'] )
+        env.Append( CPPPATH=[r"E:\Program Files\Microsoft SDKs\Windows\v6.0A\Include"
+                            , r"E:\Program Files\Microsoft Visual Studio 9.0\VC\include"])
+
+    env.AppendUnique( CCFLAGS=[ r"/MD",r"/EHsc",r"/GR",r"/Zc:wchar_t",r"/Zc:forScope" ] )
+    env.AppendUnique( LINKFLAGS=[r"/MAP:${TARGET.base}.map", r"/MAPINFO:EXPORTS"] )
+
+    if env[ 'use_msvc71' ]:
+        env['MSVS'] = {'VERSION': '7.1'}
+        env['MSVS_VERSION'] = '7.1'
+        Tool('msvc')(env)
+
+
+env.AppendUnique( CPPPATH=['#data'] )
+
+scripts = [ 'enums'
+            , 'opaque'
+            , 'include_algorithm'
+            , 'anonymous'
+            , 'variables'
+            , 'varargs'
+            , 'templates'
+            , 'circular_references'
+            , 'function_ptr_as_variable'
+            , 'user_code'
+            , 'char_ptr_as_binary_data' ]
+
+for s in scripts:
+    SConscript( 'data/ctypes/%s/sconscript' % s
+                , variant_dir='data/ctypes/%s/binaries' % s
+                , duplicate=0
+                , exports=["env"] )

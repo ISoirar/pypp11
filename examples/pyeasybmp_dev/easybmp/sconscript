@@ -1,0 +1,11 @@
+import os
+Import('*')
+
+if os.path.exists( r'E:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib' ):
+    env.Append( LIBPATH=[r'E:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib'] )
+
+t = env.SharedLibrary( target=r'easybmp'
+                       , source=[ r'EasyBMP.cpp' ]
+                       , CCFLAGS=[ r"/MD",r"/EHsc",r"/GR",r"/Zc:wchar_t",r"/Zc:forScope" ]
+                       , LINKFLAGS=[r"/MAP:binaries\easybmp.map", r"/MAPINFO:EXPORTS"]
+                       , SHLIBSUFFIX='.dll' )

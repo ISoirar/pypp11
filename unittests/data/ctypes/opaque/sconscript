@@ -1,0 +1,5 @@
+Import('*')
+
+target_name = 'opaque'
+shlib = env.SharedLibrary( target=target_name, source=[ target_name + '.cpp' ] )
+env.Alias( target_name, shlib )
