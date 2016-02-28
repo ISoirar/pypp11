@@ -1,6 +1,5 @@
-# Copyright 2004-2008 Roman Yakovenko.
 # Distributed under the Boost Software License, Version 1.0. (See
-# accompanying file LICENSE_1_0.txt or copy at
+# accompanying file LICENSE.md or copy at
 # http://www.boost.org/LICENSE_1_0.txt)
 
 import sys, os, os.path
@@ -8,23 +7,23 @@ from distutils import sysconfig
 from distutils.core import setup
 from distutils.cmd import Command
 
-setup( name = "Py++",
-       version = "1.0.0",
-       description="Py++ is a framework of components for creating C++ code generator for Boost.Python library",
-       author="Roman Yakovenko",
-       author_email="roman.yakovenko@gmail.com",
-       url='http://www.language-binding.net/pyplusplus/pyplusplus.html',
+setup( name = "Py++11",
+       version = "0.0.0",
+       description="Py++11 is a framework of components for creating C++ code generator for pybind11 library",
+       author="Rarios",
+       author_email="rarios.dev@gmail.com",
+       url='https://github.com/IAmRarios/pypp11',
        scripts = ["scripts/pyplusplus_gui",
                   "scripts/pyplusplus_gui.pyw"],
-       packages=[ 'pyplusplus',
-                  'pyplusplus.file_writers',
-                  'pyplusplus.code_creators',
-                  'pyplusplus.creators_factory',
-                  'pyplusplus.code_repository',
-                  'pyplusplus.code_repository.indexing_suite',
-                  'pyplusplus.decl_wrappers',
-                  'pyplusplus.module_builder',
-                  'pyplusplus.utils',
-                  'pyplusplus.function_transformers',
-                  'pyplusplus._logging_',
-                  'pyplusplus.messages'] )
+       packages=[ 'pypp11',
+                  'pypp11.file_writers',
+                  'pypp11.code_creators',
+                  'pypp11.creators_factory',
+                  'pypp11.code_repository',
+                  'pypp11.code_repository.indexing_suite',
+                  'pypp11.decl_wrappers',
+                  'pypp11.module_builder',
+                  'pypp11.utils',
+                  'pypp11.function_transformers',
+                  'pypp11._logging_',
+                  'pypp11.messages'] )

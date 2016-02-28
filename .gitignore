@@ -1,0 +1,8 @@
+# Logs
+*.log
+
+# Python files
+*.pyc
+
+# Temporary files
+*.swp
