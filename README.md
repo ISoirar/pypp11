@@ -43,7 +43,8 @@ The documentation is yet to be added.
 
 ## Special Thanks
 
-* [Wenzel Jakob][wjakob] - For creating the awesome [pybind11] library :heart:
+* [Wenzel Jakob][wjakob] - for creating the awesome [pybind11] library :heart:
+* Yakovenko Roman - for creating [Py++][pyplusplus]
 
 ---
 
@@ -56,4 +57,5 @@ Distributed under the [Boost Software License, Version 1.0][boost_license].
 [pybind11]: https://github.com/wjakob/pybind11 "pybind11"
 [pybind11doc]: http://pybind11.readthedocs.org/en/latest/ "pybind11 documentation @ Read the Docs"
 [pygccxml]: http://pygccxml.readthedocs.org/en/develop/ "pygccxml"
+[pyplusplus]: https://bitbucket.org/ompl/pyplusplus "Py++ on Bitbucket"
 [wjakob]: https://github.com/wjakob "Wenzel Jakob"

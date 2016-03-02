@@ -17,7 +17,8 @@ This project follows the practice of [Semantic Versioning][semantic_versioning].
 
 ### Changed
 
-* Added information on requirements, installation and contribution `README.md`
+* Added information on requirements, installation, contribution and special
+  thanks to `README.md`
 * `LICENSE_1_0.txt` -> `LICENSE.md`
 * `contri/` -> `contributed/`
 * `pyplusplus/`-> `pypp11/`
