@@ -5,7 +5,7 @@
 
 import algorithm
 import code_creator
-from pygccxml import utils
+from pygccxml.utils import utils
 
 class declaration_based_t:
     """Code creator that is based on a declaration.

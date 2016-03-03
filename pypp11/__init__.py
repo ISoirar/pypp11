@@ -31,14 +31,17 @@ import messages
 
 from _logging_ import multi_line_formatter_t
 
-__version__ = '1.5.0'
+__version__ = '0.0.0'
 
 import pygccxml
-if not hasattr( pygccxml, '__revision__' ) or pygccxml.__revision__ < 1080:
-    msg = 'This revision of `Py++` requieres pygccxml revision to be ' \
-          'greater or equal to %d. ' \
-          'Please install right pygccxml version.'
-    raise AssertionError( msg % pygccxml.__revision__ )
+
+if hasattr(pygccxml, '__revision__'):
+    required_revision = 1080
+    if pygccxml.__revision__ < required_revision:
+        msg = 'This revision of `Py++` requieres pygccxml revision to be ' \
+              'greater or equal to %d. ' \
+              'Please install right pygccxml version.'
+        raise AssertionError(msg % required_revision)
 
 #Known issues:
 #3.

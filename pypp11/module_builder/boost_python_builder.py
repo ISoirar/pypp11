@@ -11,7 +11,7 @@ import warnings
 import module_builder
 
 from pygccxml import parser
-from pygccxml import utils as pygccxml_utils
+from pygccxml.utils import utils as pygccxml_utils
 from pygccxml import declarations as decls_package
 
 from pyplusplus import utils

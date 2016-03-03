@@ -14,7 +14,7 @@ import module_body
 import library_reference
 import declaration_based
 import include_directories
-from pygccxml import utils
+from pygccxml.utils import utils
 
 
 
