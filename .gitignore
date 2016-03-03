@@ -4,8 +4,9 @@
 # Python files
 *.pyc
 
-# Temporary files
+# Temporary or backup files
 *.swp
+*.backup
 
 # Documentation builds
 docs/build/
