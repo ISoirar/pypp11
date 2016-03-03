@@ -1,3 +1,0 @@
-Py++ is an object-oriented framework for creating a code generator for
-`Boost.Python <http://www.boost.org/libs/python/doc/index.html>`_ library and 
-`ctypes <http://docs.python.org/library/ctypes.html>`_ package.

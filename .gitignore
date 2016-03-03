@@ -6,3 +6,6 @@
 
 # Temporary files
 *.swp
+
+# Documentation builds
+docs/build/

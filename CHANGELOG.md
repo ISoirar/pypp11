@@ -14,6 +14,7 @@ This project follows the practice of [Semantic Versioning][semantic_versioning].
 * Description of planned development in `dev_tools/development_stages.md`
 * Description of required changes in Py++ internals in
   `dev_tools/port_to_pybind11.md`
+* Sphinx documentation make files `docs/Makefile` and `docs/make.bat`
 
 ### Changed
 
@@ -27,6 +28,8 @@ This project follows the practice of [Semantic Versioning][semantic_versioning].
 * Rewritten `pygccxml` revision number check in `pypp11/__init__.py`, so it
   actually does what it should and not just throw `AttributeError`
 * `from pygccxml import utils` -> `from pygccxml.utils import utils`
+* Moved documentation source root from `docs/` to `docs/source/`. Documentation
+  will be generated into `docs/build/`
 
 ### Removed
 
