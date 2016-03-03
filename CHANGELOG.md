@@ -24,6 +24,9 @@ This project follows the practice of [Semantic Versioning][semantic_versioning].
 * `pyplusplus/`-> `pypp11/`
 * `unittests/` -> `unit_tests/`
 * Made `setup.py` compatible with Py++11 and the changed directory tree
+* Rewritten `pygccxml` revision number check in `pypp11/__init__.py`, so it
+  actually does what it should and not just throw `AttributeError`
+* `from pygccxml import utils` -> `from pygccxml.utils import utils`
 
 ### Removed
 
