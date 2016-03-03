@@ -8,7 +8,7 @@ from distutils.core import setup
 from distutils.cmd import Command
 
 setup( name = "Py++11",
-       version = "0.0.0",
+       version = "0.1.0",
        description="Py++11 is a framework of components for creating C++ code generator for pybind11 library",
        author="Rarios",
        author_email="rarios.dev@gmail.com",

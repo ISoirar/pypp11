@@ -31,7 +31,7 @@ import messages
 
 from _logging_ import multi_line_formatter_t
 
-__version__ = '0.0.0'
+__version__ = '0.1.0'
 
 import pygccxml
 
