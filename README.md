@@ -21,9 +21,9 @@ Py++11 uses Python's distutils, so you can apply the usual procedure by placing
 yourself in the root of the project's directory and entering the following
 command:
 
-	```
-	python setup.py install
-	```
+```
+python setup.py install
+```
 
 ## Contributing
 
