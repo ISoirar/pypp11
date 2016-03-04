@@ -64,7 +64,7 @@ changes if you find them.
     py::class_<ClassName>(m, "ClassName")
     ```
 
-* [ ] Replaced statements of the following pattern:
+* [x] Replaced statements of the following pattern:
 
     ```
     bp::enum_<EnumName>("EnumName")
