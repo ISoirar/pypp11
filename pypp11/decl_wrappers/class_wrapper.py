@@ -11,7 +11,7 @@ import properties
 import decl_wrapper
 import scopedef_wrapper
 import variable_wrapper
-from pyplusplus import messages
+from pypp11 import messages
 from pygccxml import declarations
 import indexing_suite1 as isuite1
 import indexing_suite2 as isuite2

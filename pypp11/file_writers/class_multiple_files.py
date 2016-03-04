@@ -12,9 +12,9 @@ import os
 import writer
 import multiple_files
 from pygccxml import declarations
-from pyplusplus import decl_wrappers
-from pyplusplus import code_creators
-from pyplusplus import utils as pypp_utils
+from pypp11 import decl_wrappers
+from pypp11 import code_creators
+from pypp11 import utils as pypp_utils
 
 class class_multiple_files_t(multiple_files.multiple_files_t):
     """

@@ -87,7 +87,7 @@ def create_valid_name(name):
 def create_identifier(creator, full_name ):
     """Return new full name, which takes into account namespace aliases"""
 
-    from pyplusplus import code_creators
+    from pypp11 import code_creators
     dset = creators_affect_on_me( creator )
     dset = filter( lambda x: isinstance( x, code_creators.namespace_alias_t ), dset )
     full_name = full_name.lstrip( '::' )

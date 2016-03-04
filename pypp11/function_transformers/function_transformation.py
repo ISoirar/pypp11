@@ -8,7 +8,7 @@
 import hashlib
 import controllers
 from pygccxml import declarations
-from pyplusplus import code_repository
+from pypp11 import code_repository
 
 class function_transformation_t:
     """the class holds function transformation definition - all transformations that should be applied"""

@@ -6,7 +6,7 @@
 """defines class that configure enumeration declaration exposing"""
 
 import decl_wrapper
-from pyplusplus import messages
+from pypp11 import messages
 from pygccxml import declarations
 
 class enumeration_t(decl_wrapper.decl_wrapper_t, declarations.enumeration_t):

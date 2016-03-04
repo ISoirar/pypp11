@@ -9,7 +9,7 @@ import code_creator
 import calldef_utils
 import class_declaration
 from pygccxml import declarations
-from pyplusplus import code_repository
+from pypp11 import code_repository
 from calldef import calldef_t, calldef_wrapper_t
 import pyplusplus.function_transformers as function_transformers
 

@@ -23,7 +23,7 @@ class class_declaration_t( scoped.scoped_t
         self.works_on_instance = False
 
     def _generate_class_definition(self):
-        class_identifier = algorithm.create_identifier( self, '::boost::python::class_' )
+        class_identifier = algorithm.create_identifier( self, 'pybind11::class_' )
         return declarations.templates.join( class_identifier, [self.decl_identifier] )
 
     def _generate_code_no_scope(self):
@@ -183,7 +183,7 @@ class class_t( scoped.scoped_t, registration_based.registration_based_t ):
             return None
 
     def _generate_class_definition(self, base_creators):
-        class_identifier = algorithm.create_identifier( self, '::boost::python::class_' )
+        class_identifier = algorithm.create_identifier( self, 'pybind11::class_' )
         args = []
 
         held_type = self._generated_held_type()

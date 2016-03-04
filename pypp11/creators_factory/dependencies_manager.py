@@ -6,10 +6,10 @@
 """defines class, which informs user about used, but unexposed declarations"""
 
 import os
-from pyplusplus import utils
-from pyplusplus import messages
+from pypp11 import utils
+from pypp11 import messages
 from pygccxml import declarations
-from pyplusplus import decl_wrappers
+from pypp11 import decl_wrappers
 
 class duplicated_names_reporter_t(object):
     def __init__( self, decls, value_getter, msg ):

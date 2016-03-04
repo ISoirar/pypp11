@@ -7,9 +7,9 @@
 import os
 import algorithm
 import registration_based
-from pyplusplus import code_repository
-from pyplusplus.decl_wrappers import call_policies
-from pyplusplus.decl_wrappers import python_traits
+from pypp11 import code_repository
+from pypp11.decl_wrappers import call_policies
+from pypp11.decl_wrappers import python_traits
 from pygccxml import declarations
 
 class array_1_registrator_t( registration_based.registration_based_t ):

@@ -4,8 +4,8 @@
 # http://www.boost.org/LICENSE_1_0.txt)
 
 from pygccxml import declarations
-from pyplusplus import code_creators
-from pyplusplus import decl_wrappers
+from pypp11 import code_creators
+from pypp11 import decl_wrappers
 
 def find_out_opaque_decl( type_, ensure_opaque_decl ):
     naked_type = declarations.remove_cv( type_ )

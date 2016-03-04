@@ -30,6 +30,7 @@ This project follows the practice of [Semantic Versioning][semantic_versioning].
 * `from pygccxml import utils` -> `from pygccxml.utils import utils`
 * Moved documentation source root from `docs/` to `docs/source/`. Documentation
   will be generated into `docs/build/`
+* `from pyplusplus` imports to `from pypp11` imports
 
 ### Removed
 

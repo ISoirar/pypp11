@@ -6,9 +6,9 @@
 """defines base class for all code generator configuration classes"""
 
 import algorithm
-from pyplusplus import _logging_
+from pypp11 import _logging_
 from pygccxml import declarations
-from pyplusplus import messages
+from pypp11 import messages
 
 class CODE_GENERATOR_TYPES:
     BOOST_PYTHON = 'Boost.Python'

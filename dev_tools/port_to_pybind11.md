@@ -17,9 +17,9 @@ changes if you find them.
 
 	**Note**: This is only needed if operator overloading is actually present.
 
-* [ ] `namespace bp = boost::python;` -> `namespace py = pybind11;`
+* [x] `namespace bp = boost::python;` -> `namespace py = pybind11;`
 
-* [ ] `bp::` -> `py::`
+* [x] `bp::` -> `py::`
 
 * [ ] `BOOST_PYTHON_MODULE` -> `PYBIND11_PLUGIN`
 

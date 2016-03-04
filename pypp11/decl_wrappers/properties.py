@@ -6,8 +6,8 @@
 "defines property_t helper class"
 
 import algorithm
-from pyplusplus import messages
-from pyplusplus import _logging_
+from pypp11 import messages
+from pypp11 import _logging_
 from pygccxml import declarations
 
 class property_t( object ):

@@ -8,7 +8,7 @@ This module is a collection of unrelated algorithms, that works on code creators
 tree.
 """
 
-from pyplusplus.decl_wrappers.algorithm import *
+from pypp11.decl_wrappers.algorithm import *
 
 
 import types

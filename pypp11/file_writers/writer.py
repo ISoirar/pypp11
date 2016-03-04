@@ -9,10 +9,10 @@ import os
 import time
 import codecs
 import md5sum_repository
-from pyplusplus import utils
-from pyplusplus import _logging_
-from pyplusplus import code_creators
-from pyplusplus import code_repository
+from pypp11 import utils
+from pypp11 import _logging_
+from pypp11 import code_creators
+from pypp11 import code_repository
 
 class writer_t(object):
     """Base class for all module/code writers.

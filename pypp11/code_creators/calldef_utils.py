@@ -7,7 +7,7 @@ import os
 import algorithm
 import code_creator
 from pygccxml import declarations
-from pyplusplus import decl_wrappers
+from pypp11 import decl_wrappers
 #virtual functions that returns const reference to something
 #could not be overriden by Python. The reason is simple:
 #in boost::python::override::operator(...) result of marshaling

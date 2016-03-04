@@ -6,7 +6,7 @@
 """defines base class for :class:`decl_wrappers.class_t` and :class:`decl_wrappers.namespace_t` classes"""
 
 import decl_wrapper
-from pyplusplus import messages
+from pypp11 import messages
 
 class scopedef_t(decl_wrapper.decl_wrapper_t):
     """base class for :class:`decl_wrappers.class_t` and :class:`decl_wrappers.namespace_t` classes

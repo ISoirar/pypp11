@@ -9,7 +9,7 @@ import decl_wrapper
 import python_traits
 import call_policies
 import python_traits
-from pyplusplus import messages
+from pypp11 import messages
 from pygccxml import declarations
 
 class variable_t(decl_wrapper.decl_wrapper_t, declarations.variable_t):

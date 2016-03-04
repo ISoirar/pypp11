@@ -9,8 +9,8 @@ import code_creator
 import declaration_based
 import registration_based
 from pygccxml import declarations
-from pyplusplus import decl_wrappers
-from pyplusplus import code_repository
+from pypp11 import decl_wrappers
+from pypp11 import code_repository
 
 class  expose_this_t( registration_based.registration_based_t
                       , declaration_based.declaration_based_t ):

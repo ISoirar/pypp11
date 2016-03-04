@@ -210,7 +210,7 @@ class builder_t(module_builder.module_builder_t):
 
     def build_code_creator( self
                        , module_name
-                       , boost_python_ns_name='bp'
+                       , boost_python_ns_name='py'
                        , call_policies_resolver_=None
                        , types_db=None
                        , target_configuration=None
@@ -222,7 +222,7 @@ class builder_t(module_builder.module_builder_t):
         :param module_name: module name
         :type module_name: str
 
-        :param boost_python_ns_name: boost::python namespace alias, by default it is `bp`
+        :param boost_python_ns_name: boost::python namespace alias, by default it is `py`
         :type boost_python_ns_name: str
 
         :param call_policies_resolver_: callable, that will be invoked on every calldef object. It should return call policies.
@@ -232,7 +232,7 @@ class builder_t(module_builder.module_builder_t):
         :type doc_extractor: callable or None
         """
 
-        creator = creators_factory.bpcreator_t( self.global_ns
+        creator = creators_factory.pybind11_creator_t( self.global_ns
                                                 , module_name
                                                 , boost_python_ns_name
                                                 , call_policies_resolver_

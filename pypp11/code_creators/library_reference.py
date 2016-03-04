@@ -5,7 +5,7 @@
 
 import os
 import code_creator
-from pyplusplus import decl_wrappers
+from pypp11 import decl_wrappers
 
 #TODO: add different dlls
 

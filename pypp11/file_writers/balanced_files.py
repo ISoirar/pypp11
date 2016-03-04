@@ -8,12 +8,12 @@
 import os
 import math
 import multiple_files
-from pyplusplus import messages
-from pyplusplus import _logging_
+from pypp11 import messages
+from pypp11 import _logging_
 from pygccxml import declarations
-from pyplusplus import decl_wrappers
-from pyplusplus import code_creators
-from pyplusplus.utils import split_sequence
+from pypp11 import decl_wrappers
+from pypp11 import code_creators
+from pypp11.utils import split_sequence
 
 #TODO: to add namespace_alias_t classes
 class balanced_files_t(multiple_files.multiple_files_t):

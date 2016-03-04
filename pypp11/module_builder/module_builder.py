@@ -6,8 +6,8 @@
 import os
 import sys
 
-from pyplusplus import _logging_
-from pyplusplus import decl_wrappers
+from pypp11 import _logging_
+from pypp11 import decl_wrappers
 
 class module_builder_t(object):
     """base class for different module builders."""

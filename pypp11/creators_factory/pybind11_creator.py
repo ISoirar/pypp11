@@ -20,7 +20,7 @@ from pypp11 import _logging_
 ACCESS_TYPES = declarations.ACCESS_TYPES
 VIRTUALITY_TYPES = declarations.VIRTUALITY_TYPES
 
-class bpcreator_t( declarations.decl_visitor_t ):
+class pybind11_creator_t( declarations.decl_visitor_t ):
     """
     code creators factory for Boost.Python library
 
@@ -33,7 +33,7 @@ class bpcreator_t( declarations.decl_visitor_t ):
     def __init__( self
                   , decls
                   , module_name
-                  , boost_python_ns_name='bp'
+                  , boost_python_ns_name='py'
                   , call_policies_resolver_=None
                   , types_db=None
                   , target_configuration=None
@@ -78,7 +78,7 @@ class bpcreator_t( declarations.decl_visitor_t ):
         self.__extmodule = code_creators.bpmodule_t( global_ns )
         if boost_python_ns_name:
             bp_ns_alias = code_creators.namespace_alias_t( alias=boost_python_ns_name
-                                                           , full_namespace_name='::boost::python' )
+                                                           , full_namespace_name='pybind11' )
             self.__extmodule.adopt_creator( bp_ns_alias )
 
         self.__module_body = code_creators.module_body_t( name=module_name )

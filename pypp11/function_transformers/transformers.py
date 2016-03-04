@@ -12,7 +12,7 @@ import string
 import transformer
 import controllers
 from pygccxml import declarations
-from pyplusplus import code_repository
+from pypp11 import code_repository
 
 #TODO: pointers should be checked for NULL
 

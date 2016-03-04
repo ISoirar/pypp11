@@ -5,8 +5,8 @@
 
 import os
 import types
-from pyplusplus import decl_wrappers
-from pyplusplus import code_repository
+from pypp11 import decl_wrappers
+from pypp11 import code_repository
 
 class code_creator_t(object):
     """

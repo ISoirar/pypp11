@@ -9,9 +9,9 @@ import os
 import user_text
 import algorithm
 import decl_wrapper
-from pyplusplus import messages
+from pypp11 import messages
 from pygccxml import declarations
-from pyplusplus import function_transformers as ft
+from pypp11 import function_transformers as ft
 
 class calldef_t(decl_wrapper.decl_wrapper_t):
     """base class, for code generator configuration, for function declaration classes."""

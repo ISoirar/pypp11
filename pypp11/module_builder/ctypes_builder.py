@@ -15,12 +15,12 @@ from pygccxml import binary_parsers
 from pygccxml import parser
 from pygccxml import declarations as decls_package
 
-from pyplusplus import utils
-from pyplusplus import _logging_
-from pyplusplus import decl_wrappers
-from pyplusplus import file_writers
-from pyplusplus import code_creators
-from pyplusplus import creators_factory
+from pypp11 import utils
+from pypp11 import _logging_
+from pypp11 import decl_wrappers
+from pypp11 import file_writers
+from pypp11 import code_creators
+from pypp11 import creators_factory
 
 class ctypes_module_builder_t(module_builder.module_builder_t):
     """

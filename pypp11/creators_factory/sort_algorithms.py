@@ -4,7 +4,7 @@
 # http://www.boost.org/LICENSE_1_0.txt)
 
 from pygccxml import declarations
-from pyplusplus import decl_wrappers
+from pypp11 import decl_wrappers
 
 class COLOR:
     WHITE = 0

@@ -8,7 +8,7 @@ created for exposing a declaration
 """
 
 from pygccxml import declarations
-from pyplusplus import code_creators
+from pypp11 import code_creators
 
 
 ACCESS_TYPES = declarations.ACCESS_TYPES

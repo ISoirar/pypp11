@@ -7,7 +7,7 @@
 This file contains C++ code - custom call policies
 """
 
-from pyplusplus.decl_wrappers import call_policies
+from pypp11.decl_wrappers import call_policies
 
 namespace = "pyplusplus::call_policies"
 

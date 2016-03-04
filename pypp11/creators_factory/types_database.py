@@ -3,10 +3,10 @@
 # accompanying file LICENSE_1_0.txt or copy at
 # http://www.boost.org/LICENSE_1_0.txt)
 
-from pyplusplus import messages
+from pypp11 import messages
 from pygccxml import declarations
-from pyplusplus import code_creators
-from pyplusplus import _logging_
+from pypp11 import code_creators
+from pypp11 import _logging_
 templates = declarations.templates
 
 class types_database_t( object ):

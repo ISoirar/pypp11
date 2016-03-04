@@ -7,7 +7,9 @@
 This package provides simple and convenient interface to `Py++` functionality.
 """
 
-from boost_python_builder import builder_t as module_builder_t
+from pybind11_builder import builder_t as module_builder_t
+# Keep Boost.Python code generator still available, but not as default.
+from boost_python_builder import builder_t as boost_python_builder_t
 from ctypes_builder import ctypes_module_builder_t
 
 #aliases for functionality located in pygccxml.parser module
@@ -23,30 +25,30 @@ from pygccxml.declarations import mdecl_wrapper_t
 
 #aliases for functionality located in decl_wrappers package
 
-from pyplusplus.decl_wrappers import calldef_t
-from pyplusplus.decl_wrappers import member_function_t
-from pyplusplus.decl_wrappers import constructor_t
-from pyplusplus.decl_wrappers import destructor_t
-from pyplusplus.decl_wrappers import member_operator_t
-from pyplusplus.decl_wrappers import casting_operator_t
-from pyplusplus.decl_wrappers import free_function_t
-from pyplusplus.decl_wrappers import free_operator_t
-from pyplusplus.decl_wrappers import class_declaration_t
-from pyplusplus.decl_wrappers import class_t
-from pyplusplus.decl_wrappers import enumeration_t
-from pyplusplus.decl_wrappers import namespace_t
-from pyplusplus.decl_wrappers import typedef_t
-from pyplusplus.decl_wrappers import variable_t
-from pyplusplus.decl_wrappers import scopedef_t
+from pypp11.decl_wrappers import calldef_t
+from pypp11.decl_wrappers import member_function_t
+from pypp11.decl_wrappers import constructor_t
+from pypp11.decl_wrappers import destructor_t
+from pypp11.decl_wrappers import member_operator_t
+from pypp11.decl_wrappers import casting_operator_t
+from pypp11.decl_wrappers import free_function_t
+from pypp11.decl_wrappers import free_operator_t
+from pypp11.decl_wrappers import class_declaration_t
+from pypp11.decl_wrappers import class_t
+from pypp11.decl_wrappers import enumeration_t
+from pypp11.decl_wrappers import namespace_t
+from pypp11.decl_wrappers import typedef_t
+from pypp11.decl_wrappers import variable_t
+from pypp11.decl_wrappers import scopedef_t
 
-from pyplusplus.decl_wrappers import print_declarations
+from pypp11.decl_wrappers import print_declarations
 
-from pyplusplus.decl_wrappers import doc_extractor_i
+from pypp11.decl_wrappers import doc_extractor_i
 
 import call_policies
 
 from pygccxml import utils as __pygccxml_utils
-from pyplusplus import _logging_ as __pyplusplus_logging
+from pypp11 import _logging_ as __pyplusplus_logging
 
 def set_logger_level( level ):
     for l in __pygccxml_utils.loggers.all:

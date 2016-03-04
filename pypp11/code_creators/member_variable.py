@@ -10,9 +10,9 @@ import ctypes_formatter
 import declaration_based
 import registration_based
 from pygccxml import declarations
-from pyplusplus import code_repository
-from pyplusplus.decl_wrappers import call_policies
-from pyplusplus.decl_wrappers import python_traits
+from pypp11 import code_repository
+from pypp11.decl_wrappers import call_policies
+from pypp11.decl_wrappers import python_traits
 
 class member_variable_base_t( registration_based.registration_based_t
                               , declaration_based.declaration_based_t ):

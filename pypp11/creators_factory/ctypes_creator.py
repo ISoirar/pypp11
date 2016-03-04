@@ -6,11 +6,11 @@
 import sort_algorithms
 import dependencies_manager
 from pygccxml import binary_parsers
-from pyplusplus import _logging_
+from pypp11 import _logging_
 from pygccxml import declarations
-from pyplusplus import decl_wrappers
-from pyplusplus import code_creators
-from pyplusplus import code_repository
+from pypp11 import decl_wrappers
+from pypp11 import code_creators
+from pypp11 import code_repository
 
 ACCESS_TYPES = declarations.ACCESS_TYPES
 VIRTUALITY_TYPES = declarations.VIRTUALITY_TYPES

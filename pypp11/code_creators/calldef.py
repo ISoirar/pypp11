@@ -11,7 +11,7 @@ import declaration_based
 import registration_based
 import class_declaration
 from pygccxml import declarations
-from pyplusplus import decl_wrappers
+from pypp11 import decl_wrappers
 
 #TODO:
 #Add to docs:

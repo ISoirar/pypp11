@@ -7,11 +7,11 @@
 
 import os
 import writer
-from pyplusplus import messages
-from pyplusplus import _logging_
+from pypp11 import messages
+from pypp11 import _logging_
 from pygccxml import declarations
-from pyplusplus import decl_wrappers
-from pyplusplus import code_creators
+from pypp11 import decl_wrappers
+from pypp11 import code_creators
 
 #TODO: to add namespace_alias_t classes
 class multiple_files_t(writer.writer_t):

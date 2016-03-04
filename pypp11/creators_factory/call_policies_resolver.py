@@ -5,9 +5,9 @@
 
 import opaque_types_manager
 from pygccxml import declarations
-from pyplusplus import decl_wrappers
-from pyplusplus import code_creators
-from pyplusplus.decl_wrappers import python_traits
+from pypp11 import decl_wrappers
+from pypp11 import code_creators
+from pypp11.decl_wrappers import python_traits
 
 #TODO: add opaque to documentation
 
